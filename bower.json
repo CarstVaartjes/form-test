@@ -1,10 +1,10 @@
 {
-  "name": "ultimate-flask-front-end",
-  "homepage": "https://github.com/realpython/ultimate-flask-front-end",
+  "name": "vf",
+  "homepage": "https://github.com/visualfabriq/",
   "authors": [
-    "Michael Herman michael@realpython.com"
+    "Carst Vaartjes"
   ],
-  "description": "",
+  "description": "vf test",
   "main": "",
   "license": "MIT",
   "ignore": [
@@ -12,10 +12,13 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "./project/static/bower_components"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.6",
-    "react": "^15.1.0"
-  }
+    "bootstrap": "^3.3.7",
+    "react": "^15.4.2",
+    "babel": "^5.8.38"
+  },
+  "private": true
 }

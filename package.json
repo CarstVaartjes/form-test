@@ -1,27 +1,41 @@
 {
-  "name": "ultimate-flask-front-end",
+  "name": "vf",
   "version": "1.0.0",
-  "description": "",
+  "description": "Be sure to check out the blog posts-",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/realpython/ultimate-flask-front-end.git"
   },
-  "author": "",
+  "author": "Carst Vaartjes",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/realpython/ultimate-flask-front-end/issues"
   },
   "homepage": "https://github.com/realpython/ultimate-flask-front-end#readme",
   "devDependencies": {
-    "bower": "^1.7.9",
+    "babel-cli": "^6.18.0",
+    "bower": "^1.8.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-browser": "^2.1.4",
     "gulp-size": "^2.1.0",
     "reactify": "^1.1.1"
+  },
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-loader": "^6.2.10",
+    "babelify": "^7.3.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "react": "^15.4.2",
+    "react-jsonschema-form": "^0.41.2",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.8.0",
+    "webpack": "^1.14.0"
   }
 }
