@@ -1,3 +1,9 @@
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+// import React, { Component } from "react";
+// import { render } from "react-dom";
+
 var DynamicSearch = React.createClass({
 
   // sets initial state

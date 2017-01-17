@@ -3,6 +3,11 @@
 
 // import Form from "react-jsonschema-form";
 
+var React = require('react');
+var ReactDOM = require('react-dom');
+var JsonSchema = require('react-jsonschema-form');
+var JsonSchemaForm = JsonSchema.default;
+
 const schema = {
   title: "Todo",
   type: "object",
@@ -16,8 +21,8 @@ const schema = {
 const log = (type) => console.log.bind(console, type);
 
 ReactDOM.render((
-  <ReactjsonschemaForm.Form schema={schema}
+  <JsonSchemaForm schema={schema}
         onChange={log("changed")}
         onSubmit={log("submitted")}
         onError={log("errors")} />
-), document.getElementById("app"));
+), document.getElementById("form"));
