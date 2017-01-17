@@ -1,8 +1,5 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-
-// import React, { Component } from "react";
-// import { render } from "react-dom";
+import React, { Component } from "react";
+import { render } from "react-dom";
 
 var DynamicSearch = React.createClass({
 
@@ -53,7 +50,7 @@ var countries = [
   {"name": "Spain"}, {"name": "Poland"}, {"name": "Haiti"}
 ];
 
-ReactDOM.render(
+render(
   <DynamicSearch items={ countries } />,
   document.getElementById('main')
 );
