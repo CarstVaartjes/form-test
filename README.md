@@ -5,6 +5,7 @@ Be sure to check out the blog posts-
 
 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.1/install.sh | bash
+git clone https://github.com/CarstVaartjes/form-test.git
 nvm use stable
 nvm uninstall 6
 nvm install 6
