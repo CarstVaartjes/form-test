@@ -16,9 +16,7 @@
     "./project/static/bower_components"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "react": "^15.4.2",
-    "babel": "^5.8.38"
+    "bootstrap": "^3.3.7"
   },
   "private": true
 }
