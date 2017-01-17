@@ -5,10 +5,12 @@ var browserify = require("gulp-browserify");
 var babelify = require('babelify');
 var del = require('del');
 var size = require('gulp-size');
+var rename = require('gulp-rename');
+
 
 /* nicer browserify errors */
-var gutil = require('gulp-util')
-var chalk = require('chalk')
+var gutil = require('gulp-util');
+var chalk = require('chalk');
 
 function map_error(err) {
   if (err.fileName) {
@@ -42,8 +44,11 @@ gulp.task('del', function () {
 });
 
 gulp.task('transform', function () {
-  var stream = gulp.src('./project/static/scripts/jsx/*.js')
+  var stream = gulp.src('./project/static/scripts/jsx/*.jsx')
     .pipe(browserify({transform: ['babelify']}))
+    .pipe(rename(function (path) {
+        path.extname = ".js";
+     }))
     .pipe(gulp.dest('./project/static/scripts/js/'))
     .pipe(size());
   stream.on('error', map_error);
@@ -53,7 +58,7 @@ gulp.task('transform', function () {
 
 gulp.task('default', ['del'], function () {
   gulp.start('transform');
-  gulp.watch('./project/static/scripts/jsx/*.js', ['transform']);
+  gulp.watch('./project/static/scripts/jsx/*.jsx', ['transform']);
   gulp.on('stop', () => { process.exit(0); });
   //gulp.on('err', () => { process.exit(1); });
 
