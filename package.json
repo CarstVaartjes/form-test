@@ -35,7 +35,7 @@
     "react-dom": "^15.4.2",
     "react-jsonschema-form": "^0.41.2",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.8.0",
+    "watchify": "^3.8.0"
   },
   "dependencies": {
     "babel": "^6.5.2",
